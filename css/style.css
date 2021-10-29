@@ -1,5 +1,6 @@
 body{font-family: 'Alegreya Sans SC', serif;/* test for this! Make all sizes em or rem */
     background-image: url("../images/concrete_seamless.png") ;
+    /* background:#288088; */
     color: black ;
 font-weight: bold;}
 
@@ -13,6 +14,17 @@ header{display: flex;
 
 
 
+#logo{ animation: mymove 5s ;}
+
+    @keyframes mymove {
+        from {
+            width: 50px;
+          opacity: 0;
+        
+        }
+        to {width: 425px;
+        opacity: 1;}
+      }
 
 
 
@@ -44,7 +56,7 @@ flex-direction: column;}
     /* background-color: #288088;}  */}
 
 
-.card header{background-color: #288088;
+.card > header{background-color: #288088;
 font-weight: bold;}
 
 
@@ -81,7 +93,7 @@ width: 300px;}
 
 
 @media screen and (min-width: 850px){
-
+    
 
     header{
         flex-direction: row;
@@ -103,7 +115,7 @@ width: 300px;}
         flex-basis: auto;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: nowrap;
+        align-items: center;
         /* background-color: #288088; */
         /* border: 2px solid #45ADAD; */
         padding-top: 20px;
@@ -114,37 +126,47 @@ width: 300px;}
     }
 
 
+@media print{
+    body{background-image: none;}
+
+
+
+    .gallery{display:none}
+    .gallery h2{display: none;}
+
+
+
+    .card{flex-basis: 250px;}
+
+
+
+    .card > header{background-color: #288088;
+        font-weight: bold;}
+
+
+    .pricing{
+        display:flex;
+        flex-basis: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #288088; */
+        /* border: 2px solid #45ADAD; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;}
+
+
+
+    .footer{font: bold;}
+        
+
+    }
 
 
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
 
 
 
