@@ -14,7 +14,7 @@ body{
   
   h1{
     font-size: 2em;
-    
+    text-align: center;
     line-height: 2;
     
     
@@ -29,7 +29,7 @@ body{
   
   p {
     padding: 0 30px;
-    text-align: center;
+    
   }
   
   a.skip{
@@ -69,7 +69,7 @@ body{
 
   .pricing{
     min-height: 475px;
-    display: flex;
+    
     
   }
 

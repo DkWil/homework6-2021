@@ -1,4 +1,4 @@
-body{font-family: 'Alegreya Sans SC', sans-serif;/* test for this! Make all sizes em or rem */
+body{font-family: 'Alegreya Sans SC', serif;/* test for this! Make all sizes em or rem */
     background-image: url("../images/concrete_seamless.png") ;
     color: black ;
 font-weight: bold;}
@@ -11,59 +11,36 @@ header{display: flex;
     /* background-image: url("../images/logo.png")} */}
 
 
-h1{text-align: center;
-    display: flex;
-    
+
+
+
+
+
+
+
+
+
+
+
+.pricing{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-font-weight: bold;}
-
-
-h2{color: black;
-font-weight: bold;}
-
-h3{background-color:#288088}
-
-
-p{font-weight: bold;}
-
-
-
-a.skip{}
-
-
-
-
-a.skip:focus{}
-
-
-
-*:focus{}
-
-
-.nav_item a:hover, a:focus{
-justify-content: flex-en
-}
-.nav_item a{display:flex;
-    flex-direction: column;
-    justify-content:flex-end;
-font-weight: bold;}
-
-
-.pricing{flex-direction: column;
       /* background-color: #288088;  */
      /* border: 2px solid #45ADAD;  */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;}
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* border-top-left-radius: 7px;
+        border-top-right-radius: 7px;} */ 
+}
 
 
+.nav_links{display: flex;
+flex-direction: column;}
 
 
-
-.card{  display: flex;
-    flex-direction: column;
-    font-weight: bold;
+.card{  flex-basis: 450px;
     /* background-color: #288088;}  */}
 
 
@@ -71,30 +48,15 @@ font-weight: bold;}
 font-weight: bold;}
 
 
-.card > ul{
-    color: black;
-    font-weight: bold;
-}
 
 
 
 
-.card button{
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
-    /* flex:content; */
-}
 
 
 
 
-.card h3{}
 
-
-
-
-.card_big{}
 
 
 .gallery{display:flex;
@@ -111,7 +73,6 @@ font-weight: bold;}
 margin: 10px;
 width: 300px;}
 
-footer{}
 
 
 
@@ -122,12 +83,16 @@ footer{}
 @media screen and (min-width: 850px){
 
 
-    header{display: flex;
+    header{
         flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;}
+        justify-content: space-between;
+        align-items: center;
+        }
 
+    .nav_links{flex-direction: row;}
+
+
+    .card{flex-basis: 250px;}
     .card header{
         background-color: #288088;
         font-weight: bold;}
@@ -138,7 +103,7 @@ footer{}
         flex-basis: auto;
         flex-direction: row;
         justify-content: center;
-        
+        flex-wrap: nowrap;
         /* background-color: #288088; */
         /* border: 2px solid #45ADAD; */
         padding-top: 20px;
@@ -146,35 +111,13 @@ footer{}
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;}
 
-
-
-
-
-    nav{width: 100%;}
-    .nav_item a{display:flex;
-        flex-direction: row;
-        justify-content:flex-end;
-        font-weight: bold;
-        width:100%;}
-
-
-
-
-
-
-
-
-    .gallery{display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px;
-    border:  solid #50c7c7;
     }
 
 
 
 
 
+    
 
 
 
@@ -187,11 +130,6 @@ footer{}
 
 
 
-    .card_big{
-        -webkit-transform: scaleY(1.1);
-        transform: scaleY(1.1);
-        z-index: -99;
-  }
 
 
 
@@ -201,7 +139,22 @@ footer{}
 
 
 
-}
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
